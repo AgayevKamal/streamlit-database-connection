@@ -15,13 +15,8 @@ cursor.execute('''
         comment TEXT
     )
 ''')
-conn.commit()
-
-# Veritabanındaki verileri göster
-user = cursor.execute("SELECT * FROM users").fetchall()
 
 # Veritabanına yeni kullanıcı eklemek için giriş alanları
-
 name = st.text_input("Ad:")
 comment = st.text_area("Şərh:")
 
