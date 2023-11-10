@@ -5,7 +5,7 @@ import sqlite3
 st.title("Şərh əlavə et")
 
 # SQLite veritabanına bağlan
-conn = sqlite3.connect('test4.db')
+conn = sqlite3.connect('test5.db')
 cursor = conn.cursor()
 
 # Tabloyu oluştur
