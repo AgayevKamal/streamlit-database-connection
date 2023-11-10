@@ -17,25 +17,3 @@ def show_comments():
 
     # Veritabanı bağlantısını kapat
     conn.close()
-
-
-
-
-# app.py
-
-import streamlit as st
-from comments import show_comments
-
-# Ana uygulama
-def main():
-    st.title("Streamlit ile Veritabanına Bağlanma")
-
-    # Yeni yorumları ekleme bölümü (daha önceki örneklerde olduğu gibi)
-    # ...
-
-    # Yorumları gösterme bölümü
-    show_comments()
-
-# Uygulamayı başlat
-if __name__ == "__main__":
-    main()
