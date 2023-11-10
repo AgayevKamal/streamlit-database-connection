@@ -30,8 +30,6 @@ if st.button("Daxil et"):
     cursor.execute("INSERT INTO users (name, comment) VALUES (?, ?)", (name, comment))
     conn.commit()
     st.success("Şərhiniz uğurla qeydə alındı!")
-    
-    st.write(user)
 
 # Veritabanı bağlantısını kapat
 conn.close()
