@@ -10,7 +10,7 @@ def show_comments():
 
     # Yorumları göster
     st.header("Yorumlar")
-    comments = cursor.execute("SELECT * FROM comments").fetchall()
+    comments = cursor.execute("SELECT * FROM user_table").fetchall()
 
     for comment in comments:
         st.write(f"**{comment[1]}** diyor: {comment[2]}")
