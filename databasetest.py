@@ -22,7 +22,7 @@ comment = st.text_area("Şərh:")
 
 # Yeni kullanıcıyı eklemek için buton
 if st.button("Daxil et"):
-    cursor.execute("INSERT INTO users (name, comment) VALUES (?, ?)", (name, comment))
+    cursor.execute("INSERT INTO user_table (name, comment) VALUES (?, ?)", (name, comment))
     conn.commit()
     st.success("Şərhiniz uğurla qeydə alındı!")
 
